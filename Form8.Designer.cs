@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             UserAccount = new TabPage();
+            uiButton1 = new Sunny.UI.UIButton();
             BtnView = new Sunny.UI.UIButton();
             LblMsg = new Sunny.UI.UILabel();
             CboProfile = new Sunny.UI.UIComboBox();
@@ -120,6 +121,7 @@
             // 
             // UserAccount
             // 
+            UserAccount.Controls.Add(uiButton1);
             UserAccount.Controls.Add(BtnView);
             UserAccount.Controls.Add(LblMsg);
             UserAccount.Controls.Add(CboProfile);
@@ -142,6 +144,17 @@
             UserAccount.TabIndex = 2;
             UserAccount.Text = "User Account";
             UserAccount.UseVisualStyleBackColor = true;
+            // 
+            // uiButton1
+            // 
+            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiButton1.Location = new Point(757, 103);
+            uiButton1.MinimumSize = new Size(1, 1);
+            uiButton1.Name = "uiButton1";
+            uiButton1.Size = new Size(267, 250);
+            uiButton1.TabIndex = 7;
+            uiButton1.Text = "uiButton1";
+            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // BtnView
             // 
@@ -863,5 +876,6 @@
         private Sunny.UI.UITextBox TxtPwd;
         private Sunny.UI.UILabel uiLabel13;
         private Sunny.UI.UIButton BtnView;
+        private Sunny.UI.UIButton uiButton1;
     }
 }
