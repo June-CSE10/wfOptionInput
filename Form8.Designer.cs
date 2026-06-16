@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             UserAccount = new TabPage();
+            uiLabel14 = new Sunny.UI.UILabel();
             uiButton1 = new Sunny.UI.UIButton();
             BtnView = new Sunny.UI.UIButton();
             LblMsg = new Sunny.UI.UILabel();
@@ -85,7 +86,6 @@
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             imageList1 = new ImageList(components);
-            uiLabel14 = new Sunny.UI.UILabel();
             uiTabControlMenu1.SuspendLayout();
             UserAccount.SuspendLayout();
             Suppliers.SuspendLayout();
@@ -146,6 +146,17 @@
             UserAccount.TabIndex = 2;
             UserAccount.Text = "User Account";
             UserAccount.UseVisualStyleBackColor = true;
+            // 
+            // uiLabel14
+            // 
+            uiLabel14.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel14.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel14.Location = new Point(777, 390);
+            uiLabel14.Name = "uiLabel14";
+            uiLabel14.Size = new Size(230, 52);
+            uiLabel14.TabIndex = 8;
+            uiLabel14.Text = "16-06-26/ 06:00pm";
+            uiLabel14.Click += uiLabel14_Click;
             // 
             // uiButton1
             // 
@@ -802,16 +813,6 @@
             imageList1.Images.SetKeyName(1, "order.png");
             imageList1.Images.SetKeyName(2, "supplier.png");
             imageList1.Images.SetKeyName(3, "user-avatar.png");
-            // 
-            // uiLabel14
-            // 
-            uiLabel14.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel14.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel14.Location = new Point(770, 390);
-            uiLabel14.Name = "uiLabel14";
-            uiLabel14.Size = new Size(230, 52);
-            uiLabel14.TabIndex = 8;
-            uiLabel14.Text = "12-06-26/ 07:00pm";
             // 
             // Form8
             // 

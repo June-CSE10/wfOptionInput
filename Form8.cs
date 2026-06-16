@@ -298,5 +298,10 @@ namespace wfOptionInput
                 }
             }
         }
+
+        private void uiLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
