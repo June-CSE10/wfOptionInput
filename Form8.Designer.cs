@@ -85,6 +85,7 @@
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             imageList1 = new ImageList(components);
+            uiLabel14 = new Sunny.UI.UILabel();
             uiTabControlMenu1.SuspendLayout();
             UserAccount.SuspendLayout();
             Suppliers.SuspendLayout();
@@ -121,6 +122,7 @@
             // 
             // UserAccount
             // 
+            UserAccount.Controls.Add(uiLabel14);
             UserAccount.Controls.Add(uiButton1);
             UserAccount.Controls.Add(BtnView);
             UserAccount.Controls.Add(LblMsg);
@@ -801,6 +803,16 @@
             imageList1.Images.SetKeyName(2, "supplier.png");
             imageList1.Images.SetKeyName(3, "user-avatar.png");
             // 
+            // uiLabel14
+            // 
+            uiLabel14.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel14.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel14.Location = new Point(770, 390);
+            uiLabel14.Name = "uiLabel14";
+            uiLabel14.Size = new Size(230, 52);
+            uiLabel14.TabIndex = 8;
+            uiLabel14.Text = "12-06-26/ 07:00pm";
+            // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -877,5 +889,6 @@
         private Sunny.UI.UILabel uiLabel13;
         private Sunny.UI.UIButton BtnView;
         private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UILabel uiLabel14;
     }
 }
