@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             UserAccount = new TabPage();
+            label2 = new Label();
             Lablloy = new Label();
             uiBattery1 = new Sunny.UI.UIBattery();
             uiLabel15 = new Sunny.UI.UILabel();
@@ -90,7 +91,7 @@
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             imageList1 = new ImageList(components);
-            label2 = new Label();
+            label3 = new Label();
             uiTabControlMenu1.SuspendLayout();
             UserAccount.SuspendLayout();
             Suppliers.SuspendLayout();
@@ -112,12 +113,12 @@
             uiTabControlMenu1.Font = new Font("Microsoft Sans Serif", 12F);
             uiTabControlMenu1.ImageList = imageList1;
             uiTabControlMenu1.Location = new Point(0, 0);
-            uiTabControlMenu1.Margin = new Padding(2, 2, 2, 2);
+            uiTabControlMenu1.Margin = new Padding(2);
             uiTabControlMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             uiTabControlMenu1.Multiline = true;
             uiTabControlMenu1.Name = "uiTabControlMenu1";
             uiTabControlMenu1.SelectedIndex = 0;
-            uiTabControlMenu1.Size = new Size(1468, 705);
+            uiTabControlMenu1.Size = new Size(1606, 644);
             uiTabControlMenu1.SizeMode = TabSizeMode.Fixed;
             uiTabControlMenu1.TabBackColor = Color.Goldenrod;
             uiTabControlMenu1.TabIndex = 1;
@@ -128,6 +129,7 @@
             // 
             // UserAccount
             // 
+            UserAccount.Controls.Add(label3);
             UserAccount.Controls.Add(label2);
             UserAccount.Controls.Add(Lablloy);
             UserAccount.Controls.Add(uiBattery1);
@@ -152,18 +154,28 @@
             UserAccount.Controls.Add(uiLabel9);
             UserAccount.ImageIndex = 3;
             UserAccount.Location = new Point(201, 0);
-            UserAccount.Margin = new Padding(2, 2, 2, 2);
+            UserAccount.Margin = new Padding(2);
             UserAccount.Name = "UserAccount";
-            UserAccount.Size = new Size(1267, 705);
+            UserAccount.Size = new Size(1405, 644);
             UserAccount.TabIndex = 2;
             UserAccount.Text = "User Account";
             UserAccount.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(1071, 260);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(241, 29);
+            label2.TabIndex = 13;
+            label2.Text = "pel klas reang loy del";
+            // 
             // Lablloy
             // 
             Lablloy.AutoSize = true;
-            Lablloy.Location = new Point(1118, 168);
-            Lablloy.Margin = new Padding(2, 0, 2, 0);
+            Lablloy.Location = new Point(1118, 169);
+            Lablloy.Margin = new Padding(1, 0, 1, 0);
             Lablloy.Name = "Lablloy";
             Lablloy.Size = new Size(138, 29);
             Lablloy.TabIndex = 12;
@@ -173,7 +185,7 @@
             // 
             uiBattery1.Font = new Font("Microsoft Sans Serif", 12F);
             uiBattery1.Location = new Point(1095, 4);
-            uiBattery1.Margin = new Padding(4, 4, 4, 4);
+            uiBattery1.Margin = new Padding(5, 5, 5, 5);
             uiBattery1.MinimumSize = new Size(1, 1);
             uiBattery1.Name = "uiBattery1";
             uiBattery1.Size = new Size(118, 76);
@@ -195,7 +207,7 @@
             // 
             label1.AutoSize = true;
             label1.Location = new Point(865, 460);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
             label1.Size = new Size(72, 29);
             label1.TabIndex = 9;
@@ -216,8 +228,8 @@
             // uiButton1
             // 
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(758, 102);
-            uiButton1.Margin = new Padding(2, 2, 2, 2);
+            uiButton1.Location = new Point(778, 88);
+            uiButton1.Margin = new Padding(2);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
             uiButton1.Size = new Size(268, 250);
@@ -229,7 +241,7 @@
             // 
             BtnView.Font = new Font("Microsoft Sans Serif", 12F);
             BtnView.Location = new Point(339, 516);
-            BtnView.Margin = new Padding(2, 2, 2, 2);
+            BtnView.Margin = new Padding(2);
             BtnView.MinimumSize = new Size(1, 1);
             BtnView.Name = "BtnView";
             BtnView.Size = new Size(332, 56);
@@ -325,8 +337,8 @@
             // BtnDelete
             // 
             BtnDelete.Font = new Font("Microsoft Sans Serif", 12F);
-            BtnDelete.Location = new Point(565, 457);
-            BtnDelete.Margin = new Padding(2, 2, 2, 2);
+            BtnDelete.Location = new Point(565, 458);
+            BtnDelete.Margin = new Padding(2);
             BtnDelete.MinimumSize = new Size(1, 1);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(108, 52);
@@ -338,8 +350,8 @@
             // BtnUpdate
             // 
             BtnUpdate.Font = new Font("Microsoft Sans Serif", 12F);
-            BtnUpdate.Location = new Point(452, 457);
-            BtnUpdate.Margin = new Padding(2, 2, 2, 2);
+            BtnUpdate.Location = new Point(452, 458);
+            BtnUpdate.Margin = new Padding(2);
             BtnUpdate.MinimumSize = new Size(1, 1);
             BtnUpdate.Name = "BtnUpdate";
             BtnUpdate.Size = new Size(108, 52);
@@ -351,8 +363,8 @@
             // BtnInsert
             // 
             BtnInsert.Font = new Font("Microsoft Sans Serif", 12F);
-            BtnInsert.Location = new Point(339, 457);
-            BtnInsert.Margin = new Padding(2, 2, 2, 2);
+            BtnInsert.Location = new Point(339, 458);
+            BtnInsert.Margin = new Padding(2);
             BtnInsert.MinimumSize = new Size(1, 1);
             BtnInsert.Name = "BtnInsert";
             BtnInsert.Size = new Size(108, 52);
@@ -421,9 +433,9 @@
             Suppliers.Controls.Add(tabControl2);
             Suppliers.ImageIndex = 2;
             Suppliers.Location = new Point(201, 0);
-            Suppliers.Margin = new Padding(2, 2, 2, 2);
+            Suppliers.Margin = new Padding(2);
             Suppliers.Name = "Suppliers";
-            Suppliers.Size = new Size(1267, 705);
+            Suppliers.Size = new Size(1405, 644);
             Suppliers.TabIndex = 1;
             Suppliers.Text = "Suppliers";
             Suppliers.UseVisualStyleBackColor = true;
@@ -433,10 +445,10 @@
             tabControl2.Controls.Add(S);
             tabControl2.Dock = DockStyle.Fill;
             tabControl2.Location = new Point(0, 0);
-            tabControl2.Margin = new Padding(2, 2, 2, 2);
+            tabControl2.Margin = new Padding(2);
             tabControl2.Name = "tabControl2";
             tabControl2.SelectedIndex = 0;
-            tabControl2.Size = new Size(1267, 705);
+            tabControl2.Size = new Size(1405, 644);
             tabControl2.TabIndex = 0;
             // 
             // S
@@ -456,10 +468,10 @@
             S.Controls.Add(uiLabelSupName);
             S.Controls.Add(uiLabelSupId);
             S.Location = new Point(4, 38);
-            S.Margin = new Padding(2, 2, 2, 2);
+            S.Margin = new Padding(2);
             S.Name = "S";
-            S.Padding = new Padding(2, 2, 2, 2);
-            S.Size = new Size(1259, 663);
+            S.Padding = new Padding(2);
+            S.Size = new Size(1397, 602);
             S.TabIndex = 0;
             S.Text = "Supplier Info";
             S.UseVisualStyleBackColor = true;
@@ -469,11 +481,11 @@
             uiListBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiListBox1.HoverColor = Color.FromArgb(155, 200, 255);
             uiListBox1.ItemSelectForeColor = Color.White;
-            uiListBox1.Location = new Point(609, 43);
+            uiListBox1.Location = new Point(609, 42);
             uiListBox1.Margin = new Padding(4, 5, 4, 5);
             uiListBox1.MinimumSize = new Size(1, 1);
             uiListBox1.Name = "uiListBox1";
-            uiListBox1.Padding = new Padding(2, 2, 2, 2);
+            uiListBox1.Padding = new Padding(2);
             uiListBox1.ShowText = false;
             uiListBox1.Size = new Size(372, 434);
             uiListBox1.TabIndex = 3;
@@ -483,7 +495,7 @@
             // 
             BtnCommit.Font = new Font("Microsoft Sans Serif", 12F);
             BtnCommit.Location = new Point(246, 484);
-            BtnCommit.Margin = new Padding(2, 2, 2, 2);
+            BtnCommit.Margin = new Padding(2);
             BtnCommit.MinimumSize = new Size(1, 1);
             BtnCommit.Name = "BtnCommit";
             BtnCommit.Size = new Size(355, 68);
@@ -565,7 +577,7 @@
             // uiTxtSupId
             // 
             uiTxtSupId.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtSupId.Location = new Point(246, 43);
+            uiTxtSupId.Location = new Point(246, 42);
             uiTxtSupId.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupId.MinimumSize = new Size(1, 16);
             uiTxtSupId.Name = "uiTxtSupId";
@@ -580,7 +592,7 @@
             // 
             uiLabelSupAddress.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabelSupAddress.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabelSupAddress.Location = new Point(58, 443);
+            uiLabelSupAddress.Location = new Point(58, 442);
             uiLabelSupAddress.Margin = new Padding(2, 0, 2, 0);
             uiLabelSupAddress.Name = "uiLabelSupAddress";
             uiLabelSupAddress.Size = new Size(150, 34);
@@ -635,7 +647,7 @@
             // 
             uiLabelSupId.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabelSupId.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabelSupId.Location = new Point(58, 73);
+            uiLabelSupId.Location = new Point(58, 72);
             uiLabelSupId.Margin = new Padding(2, 0, 2, 0);
             uiLabelSupId.Name = "uiLabelSupId";
             uiLabelSupId.Size = new Size(150, 34);
@@ -647,9 +659,9 @@
             Purchase.Controls.Add(tabControl1);
             Purchase.ImageIndex = 1;
             Purchase.Location = new Point(201, 0);
-            Purchase.Margin = new Padding(2, 2, 2, 2);
+            Purchase.Margin = new Padding(2);
             Purchase.Name = "Purchase";
-            Purchase.Size = new Size(1267, 705);
+            Purchase.Size = new Size(1405, 644);
             Purchase.TabIndex = 0;
             Purchase.Text = "Purchase";
             Purchase.UseVisualStyleBackColor = true;
@@ -659,10 +671,10 @@
             tabControl1.Controls.Add(PurchaseInfo);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
-            tabControl1.Margin = new Padding(2, 2, 2, 2);
+            tabControl1.Margin = new Padding(2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1267, 705);
+            tabControl1.Size = new Size(1405, 644);
             tabControl1.TabIndex = 0;
             // 
             // PurchaseInfo
@@ -684,17 +696,17 @@
             PurchaseInfo.Controls.Add(uiLabel2);
             PurchaseInfo.Controls.Add(uiLabel1);
             PurchaseInfo.Location = new Point(4, 38);
-            PurchaseInfo.Margin = new Padding(2, 2, 2, 2);
+            PurchaseInfo.Margin = new Padding(2);
             PurchaseInfo.Name = "PurchaseInfo";
-            PurchaseInfo.Padding = new Padding(2, 2, 2, 2);
-            PurchaseInfo.Size = new Size(1259, 663);
+            PurchaseInfo.Padding = new Padding(2);
+            PurchaseInfo.Size = new Size(1397, 602);
             PurchaseInfo.TabIndex = 0;
             PurchaseInfo.Text = "Purchase Info";
             // 
             // uiTextBox7
             // 
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox7.Location = new Point(280, 493);
+            uiTextBox7.Location = new Point(280, 492);
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
@@ -708,7 +720,7 @@
             // uiTextBox6
             // 
             uiTextBox6.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox6.Location = new Point(280, 427);
+            uiTextBox6.Location = new Point(280, 428);
             uiTextBox6.Margin = new Padding(4, 5, 4, 5);
             uiTextBox6.MinimumSize = new Size(1, 16);
             uiTextBox6.Name = "uiTextBox6";
@@ -901,22 +913,22 @@
             imageList1.Images.SetKeyName(2, "supplier.png");
             imageList1.Images.SetKeyName(3, "user-avatar.png");
             // 
-            // label2
+            // label3
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1095, 267);
-            label2.Name = "label2";
-            label2.Size = new Size(102, 29);
-            label2.TabIndex = 13;
-            label2.Text = "nh loy jg";
+            label3.AutoSize = true;
+            label3.Location = new Point(1095, 351);
+            label3.Name = "label3";
+            label3.Size = new Size(237, 29);
+            label3.TabIndex = 14;
+            label3.Text = "Jng loy doch bro dea";
             // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1468, 705);
+            ClientSize = new Size(1606, 644);
             Controls.Add(uiTabControlMenu1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form8";
             Text = "My Main Form";
             Load += Form8_Load;
@@ -994,5 +1006,6 @@
         private Sunny.UI.UIBattery uiBattery1;
         private Label Lablloy;
         private Label label2;
+        private Label label3;
     }
 }
