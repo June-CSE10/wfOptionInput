@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             UserAccount = new TabPage();
+            label3 = new Label();
             label2 = new Label();
             Lablloy = new Label();
             uiBattery1 = new Sunny.UI.UIBattery();
@@ -91,7 +92,7 @@
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             imageList1 = new ImageList(components);
-            label3 = new Label();
+            uiLabel16 = new Sunny.UI.UILabel();
             uiTabControlMenu1.SuspendLayout();
             UserAccount.SuspendLayout();
             Suppliers.SuspendLayout();
@@ -129,6 +130,7 @@
             // 
             // UserAccount
             // 
+            UserAccount.Controls.Add(uiLabel16);
             UserAccount.Controls.Add(label3);
             UserAccount.Controls.Add(label2);
             UserAccount.Controls.Add(Lablloy);
@@ -161,6 +163,15 @@
             UserAccount.Text = "User Account";
             UserAccount.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(1095, 351);
+            label3.Name = "label3";
+            label3.Size = new Size(237, 29);
+            label3.TabIndex = 14;
+            label3.Text = "Jng loy doch bro dea";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -185,7 +196,7 @@
             // 
             uiBattery1.Font = new Font("Microsoft Sans Serif", 12F);
             uiBattery1.Location = new Point(1095, 4);
-            uiBattery1.Margin = new Padding(5, 5, 5, 5);
+            uiBattery1.Margin = new Padding(5);
             uiBattery1.MinimumSize = new Size(1, 1);
             uiBattery1.Name = "uiBattery1";
             uiBattery1.Size = new Size(118, 76);
@@ -285,7 +296,7 @@
             TxtEmail.Margin = new Padding(4, 5, 4, 5);
             TxtEmail.MinimumSize = new Size(1, 16);
             TxtEmail.Name = "TxtEmail";
-            TxtEmail.Padding = new Padding(5, 5, 5, 5);
+            TxtEmail.Padding = new Padding(5);
             TxtEmail.ShowText = false;
             TxtEmail.Size = new Size(332, 44);
             TxtEmail.TabIndex = 3;
@@ -299,7 +310,7 @@
             TxtPwd.Margin = new Padding(4, 5, 4, 5);
             TxtPwd.MinimumSize = new Size(1, 16);
             TxtPwd.Name = "TxtPwd";
-            TxtPwd.Padding = new Padding(5, 5, 5, 5);
+            TxtPwd.Padding = new Padding(5);
             TxtPwd.ShowText = false;
             TxtPwd.Size = new Size(332, 44);
             TxtPwd.TabIndex = 3;
@@ -313,7 +324,7 @@
             TxtName.Margin = new Padding(4, 5, 4, 5);
             TxtName.MinimumSize = new Size(1, 16);
             TxtName.Name = "TxtName";
-            TxtName.Padding = new Padding(5, 5, 5, 5);
+            TxtName.Padding = new Padding(5);
             TxtName.ShowText = false;
             TxtName.Size = new Size(332, 44);
             TxtName.TabIndex = 3;
@@ -327,7 +338,7 @@
             TxtID.Margin = new Padding(4, 5, 4, 5);
             TxtID.MinimumSize = new Size(1, 16);
             TxtID.Name = "TxtID";
-            TxtID.Padding = new Padding(5, 5, 5, 5);
+            TxtID.Padding = new Padding(5);
             TxtID.ShowText = false;
             TxtID.Size = new Size(332, 44);
             TxtID.TabIndex = 3;
@@ -511,7 +522,7 @@
             uiTxtSupAddress.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupAddress.MinimumSize = new Size(1, 16);
             uiTxtSupAddress.Name = "uiTxtSupAddress";
-            uiTxtSupAddress.Padding = new Padding(5, 5, 5, 5);
+            uiTxtSupAddress.Padding = new Padding(5);
             uiTxtSupAddress.ShowText = false;
             uiTxtSupAddress.Size = new Size(355, 64);
             uiTxtSupAddress.TabIndex = 1;
@@ -525,7 +536,7 @@
             uiTxtSupEmail.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupEmail.MinimumSize = new Size(1, 16);
             uiTxtSupEmail.Name = "uiTxtSupEmail";
-            uiTxtSupEmail.Padding = new Padding(5, 5, 5, 5);
+            uiTxtSupEmail.Padding = new Padding(5);
             uiTxtSupEmail.ShowText = false;
             uiTxtSupEmail.Size = new Size(355, 64);
             uiTxtSupEmail.TabIndex = 1;
@@ -539,7 +550,7 @@
             uiTxtSupPhone.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupPhone.MinimumSize = new Size(1, 16);
             uiTxtSupPhone.Name = "uiTxtSupPhone";
-            uiTxtSupPhone.Padding = new Padding(5, 5, 5, 5);
+            uiTxtSupPhone.Padding = new Padding(5);
             uiTxtSupPhone.ShowText = false;
             uiTxtSupPhone.Size = new Size(355, 64);
             uiTxtSupPhone.TabIndex = 1;
@@ -553,7 +564,7 @@
             uiTxtSupContac.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupContac.MinimumSize = new Size(1, 16);
             uiTxtSupContac.Name = "uiTxtSupContac";
-            uiTxtSupContac.Padding = new Padding(5, 5, 5, 5);
+            uiTxtSupContac.Padding = new Padding(5);
             uiTxtSupContac.ShowText = false;
             uiTxtSupContac.Size = new Size(355, 64);
             uiTxtSupContac.TabIndex = 1;
@@ -567,7 +578,7 @@
             uiTxtSupName.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupName.MinimumSize = new Size(1, 16);
             uiTxtSupName.Name = "uiTxtSupName";
-            uiTxtSupName.Padding = new Padding(5, 5, 5, 5);
+            uiTxtSupName.Padding = new Padding(5);
             uiTxtSupName.ShowText = false;
             uiTxtSupName.Size = new Size(355, 64);
             uiTxtSupName.TabIndex = 1;
@@ -581,7 +592,7 @@
             uiTxtSupId.Margin = new Padding(4, 5, 4, 5);
             uiTxtSupId.MinimumSize = new Size(1, 16);
             uiTxtSupId.Name = "uiTxtSupId";
-            uiTxtSupId.Padding = new Padding(5, 5, 5, 5);
+            uiTxtSupId.Padding = new Padding(5);
             uiTxtSupId.ShowText = false;
             uiTxtSupId.Size = new Size(355, 64);
             uiTxtSupId.TabIndex = 1;
@@ -710,7 +721,7 @@
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
-            uiTextBox7.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox7.Padding = new Padding(5);
             uiTextBox7.ShowText = false;
             uiTextBox7.Size = new Size(355, 55);
             uiTextBox7.TabIndex = 3;
@@ -724,7 +735,7 @@
             uiTextBox6.Margin = new Padding(4, 5, 4, 5);
             uiTextBox6.MinimumSize = new Size(1, 16);
             uiTextBox6.Name = "uiTextBox6";
-            uiTextBox6.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox6.Padding = new Padding(5);
             uiTextBox6.ShowText = false;
             uiTextBox6.Size = new Size(355, 55);
             uiTextBox6.TabIndex = 3;
@@ -738,7 +749,7 @@
             uiTextBox5.Margin = new Padding(4, 5, 4, 5);
             uiTextBox5.MinimumSize = new Size(1, 16);
             uiTextBox5.Name = "uiTextBox5";
-            uiTextBox5.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox5.Padding = new Padding(5);
             uiTextBox5.ShowText = false;
             uiTextBox5.Size = new Size(355, 55);
             uiTextBox5.TabIndex = 3;
@@ -752,7 +763,7 @@
             uiTextBox4.Margin = new Padding(4, 5, 4, 5);
             uiTextBox4.MinimumSize = new Size(1, 16);
             uiTextBox4.Name = "uiTextBox4";
-            uiTextBox4.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox4.Padding = new Padding(5);
             uiTextBox4.ShowText = false;
             uiTextBox4.Size = new Size(355, 55);
             uiTextBox4.TabIndex = 3;
@@ -766,7 +777,7 @@
             uiTextBox3.Margin = new Padding(4, 5, 4, 5);
             uiTextBox3.MinimumSize = new Size(1, 16);
             uiTextBox3.Name = "uiTextBox3";
-            uiTextBox3.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox3.Padding = new Padding(5);
             uiTextBox3.ShowText = false;
             uiTextBox3.Size = new Size(355, 55);
             uiTextBox3.TabIndex = 3;
@@ -780,7 +791,7 @@
             uiTextBox2.Margin = new Padding(4, 5, 4, 5);
             uiTextBox2.MinimumSize = new Size(1, 16);
             uiTextBox2.Name = "uiTextBox2";
-            uiTextBox2.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox2.Padding = new Padding(5);
             uiTextBox2.ShowText = false;
             uiTextBox2.Size = new Size(355, 55);
             uiTextBox2.TabIndex = 3;
@@ -794,7 +805,7 @@
             uiTextBox1.Margin = new Padding(4, 5, 4, 5);
             uiTextBox1.MinimumSize = new Size(1, 16);
             uiTextBox1.Name = "uiTextBox1";
-            uiTextBox1.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox1.Padding = new Padding(5);
             uiTextBox1.ShowText = false;
             uiTextBox1.Size = new Size(355, 55);
             uiTextBox1.TabIndex = 3;
@@ -808,7 +819,7 @@
             uiTextBox9.Margin = new Padding(4, 5, 4, 5);
             uiTextBox9.MinimumSize = new Size(1, 16);
             uiTextBox9.Name = "uiTextBox9";
-            uiTextBox9.Padding = new Padding(5, 5, 5, 5);
+            uiTextBox9.Padding = new Padding(5);
             uiTextBox9.ShowText = false;
             uiTextBox9.Size = new Size(355, 55);
             uiTextBox9.TabIndex = 3;
@@ -913,14 +924,15 @@
             imageList1.Images.SetKeyName(2, "supplier.png");
             imageList1.Images.SetKeyName(3, "user-avatar.png");
             // 
-            // label3
+            // uiLabel16
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(1095, 351);
-            label3.Name = "label3";
-            label3.Size = new Size(237, 29);
-            label3.TabIndex = 14;
-            label3.Text = "Jng loy doch bro dea";
+            uiLabel16.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel16.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel16.Location = new Point(1013, 476);
+            uiLabel16.Name = "uiLabel16";
+            uiLabel16.Size = new Size(264, 34);
+            uiLabel16.TabIndex = 3;
+            uiLabel16.Text = "Messi hattrick Emm mg";
             // 
             // Form8
             // 
@@ -1007,5 +1019,6 @@
         private Label Lablloy;
         private Label label2;
         private Label label3;
+        private Sunny.UI.UILabel uiLabel16;
     }
 }
